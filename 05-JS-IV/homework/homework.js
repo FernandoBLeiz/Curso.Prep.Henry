@@ -42,7 +42,7 @@ function multiplicarNumeroDesconocidoPorCinco(objetoMisterioso) {
   // Multiplica el numeroMisterioso por 5 y devuelve el producto
   // Tu código:
 
-  var multi = objetoMisterioso.numeroMisterioso * 5
+  var multi = objetoMisterioso.numeroMisterioso * 5;
   return multi;
 
 }
@@ -52,7 +52,7 @@ function eliminarPropiedad(objeto, unaPropiedad) {
   // tip: tenes que usar bracket notation
   // Devuelve el objeto
   // Tu código:
-  delete objeto[unaPropiedad]
+  delete objeto[unaPropiedad];
 
   return objeto;
 
@@ -99,7 +99,10 @@ function verificarPassword(usuario, password) {
   // Devuelve "true" si coinciden
   // De lo contrario, devuelve "false"
   // // Tu código:
-  return usuario["password"] === password;
+  if (usuario.password === password){
+    return true;
+  }
+  return false;
 }
 
 function actualizarPassword(usuario, nuevaPassword) {
